@@ -2,19 +2,23 @@
 
 :root {
     // font-family: "Montserrat", sans-serif;
-    font-size: 16px;
+    // font-size: 16px;
     // margin: 0;
     // height: 100vh;
-    // --text-primary: ;
-    // --text-secondary: ;
-    // --bg-primary: ;
-    // --bg-secondary: ;
+    --text-primary: #555;
+    --text-secondary: #fff;
+    --bg-primary: radial-gradient(#fff, #ffd6d6);
+    --bg-secondary: #ff523b;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
 }
 
 .navbar {
@@ -40,11 +44,11 @@ nav ul li {
 
 a {
     text-decoration: none;
-    color: #555;
+    color: var(--text-primary);
 }
 
 p {
-    color: #555;
+    color: var(--text-primary);
 }
 
 .container {
@@ -53,4 +57,53 @@ p {
     padding: 0 25px 0 25px;
     // padding-left: 25px;
     // padding-right: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    border: 0.3px solid var(--bg-secondary);
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: var(--text-secondary);
+    color: var(--bg-secondary);
+    border: 0.3px solid var(--bg-secondary);
+    // background: #563434;
+}
+
+.header {
+    background: var(--bg-primary);
+}
+
+.header .row {
+    margin-top: 70px;
 }
