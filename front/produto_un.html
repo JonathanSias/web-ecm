@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>Produtos - Ecommerce Layout</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/main.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+    </head>
+    <body>
+        <!--  -->
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="assets/logo.png" width="41%" alt="" />
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="">Contato</a></li>
+                        <li><a href="">Conta</a></li>
+                    </ul>
+                </nav>
+                <img
+                    src="assets/cart.png"
+                    width="30px"
+                    height="30px"
+                    alt=""
+                />
+                <img
+                    src="assets/menu.png"
+                    class="menu-icon"
+                    onclick="menutoggle()"
+                />
+            </div>
+        </div>
+        <!-- ---------- -->
+        <!--  PRODUTOS  -->
+        <!-- ---------- -->
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <img id="ProductImage" src="assets/gallery-1.jpg" width="100%" alt="">
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="assets/gallery-1.jpg" class="small-img" width="100%" alt="">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="assets/gallery-2.jpg" class="small-img" width="100%" alt="">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="assets/gallery-3.jpg" class="small-img" width="100%" alt="">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="assets/gallery-4.jpg" class="small-img" width="100%" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <p>Home | Camiseta</p>
+                    <h1>Camiseta PUMA Vermelha</h1>
+                    <h4>$50.00</h4>
+                    <select name="" id="">
+                        <option value="">Tamanho</option>
+                        <option value="">XXL</option>
+                        <option value="">XL</option>
+                        <option value="">G</option>
+                        <option value="">M</option>
+                        <option value="">P</option>
+                        <option value="">PP</option>
+                    </select>
+                    <input type="number" value="1">
+                    <a href="" class="btn">Adicionar</a>
+                    <h3>Detalhes do Produto <i class="fa fa-indent"></i></h3>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, illo eum aliquam neque sunt itaque quas, eligendi nulla quae numquam exercitationem error magni magnam tempore.</p>
+                </div>
+            </div>
+        </div>
+        <!-- ---------- -->
+        <!--  RELATED   -->
+        <!-- ---------- -->
+        <div class="small-container">
+            <div class="row row-2">
+                <h2>Produtos Relacionados</h2>
+                <p>Ver Mais</p>
+            </div>
+        </div>
+        <div class="small-container">
+            <div class="row">
+                <div class="col-4">
+                    <img src="assets/product-9.jpg" alt="" />
+                    <h4>Relógio ROADSTER Preto</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$315.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="assets/product-10.jpg" alt="" />
+                    <h4>Tênis HRX Corrida Preto</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$95.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="assets/product-11.jpg" alt="" />
+                    <h4>Tênis ROADSTER Cinza</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$100.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="assets/product-12.jpg" alt="" />
+                    <h4>Calça de Moletom Nike</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$75.00</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ---------- -->
+        <!--   FOOTER   -->
+        <!-- ---------- -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Nosso app</h3>
+                        <p>Baixe nosso app para Android e IOS.</p>
+                        <div class="app-logo">
+                            <img src="assets/play-store.png" alt="" />
+                            <img src="assets/app-store.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="assets/logo-white.png" alt="" />
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Fugiat dolorem ea tempore eius, enim sunt aut!
+                        </p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Links Úteis</h3>
+                        <ul>
+                            <li><a href="">Cupons</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Devoluções</a></li>
+                            <li><a href="">Afiliar-se</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Redes Sociais</h3>
+                        <ul>
+                            <li><a href="">Facebook</a></li>
+                            <li><a href="">Twitter</a></li>
+                            <li><a href="">Instagram</a></li>
+                            <li><a href="">YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr />
+                <p class="copy">&copy;Copyright 2020</p>
+            </div>
+        </div>
+        <!--  -->
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+            MenuItems.style.maxHeight = "opx";
+            function menutoggle() {
+                if (MenuItems.style.maxHeight == "0px") {
+                    MenuItems.style.maxHeight = "200px";
+                } else {
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+        <!-- PRODUCT IMAGES -->
+        <script>
+            var ProductImage = document.getElementById("ProductImage");
+            var SmallImage = document.getElementsByClassName("small-img");
+            SmallImage[0].onclick = function(){
+                ProductImage.src = SmallImage[0].src;
+            }
+            SmallImage[1].onclick = function(){
+                ProductImage.src = SmallImage[1].src;
+            }
+            SmallImage[2].onclick = function(){
+                ProductImage.src = SmallImage[2].src;
+            }
+            SmallImage[3].onclick = function(){
+                ProductImage.src = SmallImage[3].src;
+            }
+        </script>
+    </body>
+</html>
